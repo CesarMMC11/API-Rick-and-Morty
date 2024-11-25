@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Slab:wght@300;400&family=Single+Day&family=Staatliches&family=Unlock&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(91, 165, 91);
+    background-image: url();
+    background-position: center;
+    background-size: contain;
+}
+.main {
+    font-family: "Unlock", serif;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 50)
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem;
+    color: wheat;
+    transition: 1s all;
+    
+}
+
+.titulo:hover{
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+
+.contenido {
+    margin:2rem 5rem;
+    border-radius: 2rem solid black;
+    border: 2.5px solid white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    padding-left: 6rem;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+    width: 65%;
+    height: 90%;
+    transition: 1s all;
+    
+}
+
+.card:hover{
+    width: 85%;
+    height: 90%;
+    cursor: pointer;
+
+
+}
+
+.imagen img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 50);
+
+}
+
+
+.personajes{
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap:2rem;
+}
+
+button{
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:rgb(42, 209, 153);
+    transition: .5s all;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+
+button:hover{
+    border: 2.5px solid lime;
+    width: 8%;
+    background-color: white;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    transition: .5s all;
+    letter-spacing: 5px;
+    margin-top: 2.5rem;
+}
+
+h2:hover{
+    color: wheat;
+    letter-spacing: 8px;
+}
+
+
+.episodios{
+    border: 2.5px solid;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 4rem ;
+    text-align: center;
+}
+
+.botones-epi{
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+@media(max-width:768px) {
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+
+@media(max-width:768px) {
+    .episodios{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;        
+    }
+}
